@@ -1,0 +1,64 @@
+/*SLIDER-INICIO*/
+
+.slider-inicio {
+  width: 100%;
+  position: relative;
+  top: 50px;
+  overflow: hidden;
+}
+
+.slider-inicio-contenedor {
+  display: flex;
+  width: 500%;
+  height: 250px;
+  animation: slidercambio 30s infinite;
+}
+
+.seccion-slider {
+  width: 100%;
+}
+
+.imagen-slider {
+  width: 100%;
+  height: 100%;
+}
+
+/*BOTONES SLIDER INICIO*/
+
+.slider-boton {
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  position: absolute;
+  padding: 15px 15px;
+  background-color: rgba(255, 255, 255, 0.3);
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.slider-boton:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#slider-boton-derecha {
+  right: 0;
+}
+
+
+@keyframes slidercambio {
+  0% {margin-left: 0%;}
+  15% {margin-left: 0%;}
+
+  20% {margin-left: -100%;}
+  35% {margin-left: -100%;}
+
+  40% {margin-left: -200%;}
+  55% {margin-left: -200%;}
+
+  60% {margin-left: -300%;}
+  75% {margin-left: -300%;}
+
+  80% {margin-left: -400%;}
+  100% {margin-left: -400%;}
+}

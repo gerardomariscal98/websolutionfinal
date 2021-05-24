@@ -1,0 +1,69 @@
+/*Header*/
+
+#checkMenuNav {
+  display: none;
+}
+
+header {
+  background-color: purple;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  z-index: 1000;
+}
+
+header h1 {
+  color: white;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+#imagenBotonMenu {
+  width: 35px;
+  position: absolute;
+  right: 2%;
+  margin-top: 10px;
+}
+
+
+/*Menú de Navegación*/
+
+nav {
+  left: -100%;
+  top: 50px;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(182, 86, 182);
+  transition: left 500ms;
+}
+
+#checkMenuNav:checked ~ nav {
+  left: 0%;
+}
+
+#checkMenuNav:checked ~ body {
+  overflow-y: hidden;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: flex;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.8);
+  width: 100%;
+  font-size: 25px;
+  padding: 10px;
+}
+
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}

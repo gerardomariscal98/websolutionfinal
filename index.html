@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LASOLUCIÓN Web</title>
+
+  <!--CSS Vinculados-->
+  <link rel="stylesheet" href="css/estiloGeneral.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/inicio.css">
+</head>
+<body>
+  
+  <header>
+    <input type="checkbox" id="checkMenuNav">
+
+    <h1>LASOLUCIÓN</h1>
+    <label for="checkMenuNav">
+      <img src="./img/header/boton-menu.png" alt="boton del menu" id="imagenBotonMenu">
+    </label>
+
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Productos</a></li>
+        <li><a href="#">Testimonios</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="slider-inicio">
+      <div class="slider-inicio-contenedor" id="conten-slider">
+        <div class="seccion-slider">
+          <img src="img/slider-inicio/slider-img-1.jpeg" alt="" class="imagen-slider">
+        </div>
+
+        <div class="seccion-slider">
+          <img src="img/slider-inicio/slider-img-2.jpeg" alt="" class="imagen-slider">
+        </div>
+
+        <div class="seccion-slider">
+          <img src="img/slider-inicio/slider-img-3.jpeg" alt="" class="imagen-slider">
+        </div>
+
+        <div class="seccion-slider">
+          <img src="img/slider-inicio/slider-img-4.jpeg" alt="" class="imagen-slider">
+        </div>
+
+        <div class="seccion-slider">
+          <img src="img/slider-inicio/slider-img-5.jpeg" alt="" class="imagen-slider">
+        </div>
+      </div>
+
+      <span class="slider-boton" id="slider-boton-derecha" onclick="derecha()">></span>
+      <span class="slider-boton" id="slider-boton-izquierda"><</span>
+    </section>
+  </main>
+
+  <!--SCRIPTS DE LA WEB-->
+
+  <script src="./scripts/slider-inicio.js"></script>
+</body>
+</html>
