@@ -25,7 +25,7 @@
 
 /*BOTONES SLIDER INICIO*/
 
-.slider-boton {
+/*.slider-boton {
   text-align: center;
   font-weight: bold;
   font-size: 25px;
@@ -43,7 +43,7 @@
 
 #slider-boton-derecha {
   right: 0;
-}
+}*/
 
 
 @keyframes slidercambio {
